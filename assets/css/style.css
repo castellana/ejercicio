@@ -1,17 +1,15 @@
-@font-face {
-    font-family: 'Athene';
-    src: url(../fonts/Athene.otf);
-}
 /* body {
     color: 
  #002a5a, #efe8d7, #F4C4C4, #282b29, #7d2222, #DEB873, #D2D2D2, #1d8883; 
 }  */
   /* font-family: 'Open Sans', sans-serif; */
+@font-face {
+    font-family: 'Athene';
+    src: url(../fonts/Athene.otf);
+}
 *{
     margin: 0;
     padding: 0;
-}
-body {
     font-family: 'Open Sans', sans-serif;
 }
 header {
@@ -264,6 +262,17 @@ ul li a:hover:after {
     display:block; 
     margin-top: 2px;
     width: unset;
+}
+ul li a:after {
+    content: ''; 
+    height: 2px; 
+    background: transparent; 
+    display:block; 
+    margin-top: 2px;
+    width: unset;
+}
+ul li a:hover:after {
+    background: black;
 }
 /* unvisited link */
 a:link {
